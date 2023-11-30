@@ -1,5 +1,6 @@
 import "./Main.css";
 import { FiDownload } from "react-icons/fi";
+import resume from "../files/torben-bis-cv.pdf";
 
 const Main = () => {
   return (
@@ -14,7 +15,7 @@ const Main = () => {
           web development training program that runs until the end of March
           2024.
         </p>
-        <a href="../files/torben-bis-cv.pdf" download>
+        <a href={resume} download>
           <span>Résumé</span>
           <FiDownload />
         </a>
