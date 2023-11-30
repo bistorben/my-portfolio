@@ -5,16 +5,22 @@
 
   & h1 {
     font-size: 2.5rem;
-    color: #43479e;
+    /* color: #43479e; */
     font-weight: 900;
     letter-spacing: 0.5px;
+    background: linear-gradient(180deg, #6d5da8 0%, #43479e 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     & span {
-      font-weight: 400;
+      font-weight: 200;
       color: #666;
     }
   }
   & p {
     font-size: 1.5rem;
     padding-left: 3rem;
+    color: #333;
+    font-weight: 300;
   }
 }
