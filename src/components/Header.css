@@ -24,3 +24,10 @@
     font-weight: 300;
   }
 }
+
+@media screen and (min-width: 1700px) {
+  .Header {
+    margin-top: 10rem;
+    margin-left: 7rem;
+  }
+}

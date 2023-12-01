@@ -1,10 +1,8 @@
 .Main {
   & .resume {
-    /* padding: 0 1.5rem; */
     margin: 5rem 2rem;
     max-width: 500px;
     position: relative;
-    /* border: 2px solid red; */
     & h2 {
       color: #00c6f9;
     }
@@ -45,9 +43,19 @@
 
 @media screen and (min-width: 1100px) {
   .Main {
-    display: flex;
     & .resume {
-      /* width: 50%; */
+      & a {
+        position: absolute;
+        right: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .Main {
+    & .resume {
+      margin: 5rem 7rem;
       & a {
         position: absolute;
         right: 1.5rem;
