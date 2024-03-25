@@ -1,5 +1,7 @@
 import "./Main.css";
 import { FiDownload } from "react-icons/fi";
+import { IoIosArrowForward } from "react-icons/io";
+
 import resume from "../files/torben-bis-cv.pdf";
 
 const Main = () => {
@@ -8,17 +10,25 @@ const Main = () => {
       <section className="resume">
         <h2>Hi there...</h2>
         <p>
-          I'm just diving into coding my web developer portfolio. Brace yourself
-          for an exclusive preview, offering a taste of my coding skills and
-          projects. Stay tuned for a sneak peek into my passion for crafting
-          digital products! Additionally, I'm currently enrolled in an intensive
-          web development training program that runs until the end of March
-          2024.
+          I am at the end of my training to become a Full Stack Web Developer -
+          MERN Stack. My focus is currently on the final project, where you can
+          get a first overview of what I have learned. I'm looking forward to
+          new perspectives soon!
         </p>
-        <a href={resume} download>
-          <span>Résumé</span>
-          <FiDownload />
-        </a>
+        <div className="link-container">
+          <a
+            href="https://trellomania-frontend.onrender.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Final Project</span>
+            <IoIosArrowForward />
+          </a>
+          <a href={resume} download>
+            <span>Résumé</span>
+            <FiDownload />
+          </a>
+        </div>
       </section>
     </main>
   );
